@@ -11,7 +11,7 @@ public class UnitConverterService {
      * @return temperature in fahrenheit
      */
     public Double celsiusToFahrenheit(Double celsius) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return (celsius * 1.8) + 32;
     }
 
     /**
@@ -20,7 +20,7 @@ public class UnitConverterService {
      * @return temperature in celsius
      */
     public Double fahrenheitToCelsius(Double fahrenheit) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return (fahrenheit - 32)/ 1.8;
     }
 
     /**
@@ -29,7 +29,7 @@ public class UnitConverterService {
      * @return distance in mile
      */
     public Double kilometerToMile(Double kilometer) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return (kilometer * 0.621371)*kilometer;
     }
 
     /**
@@ -38,7 +38,7 @@ public class UnitConverterService {
      * @return distance in kilometer
      */
     public Double mileToKilometer(Double mile) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return (mile * 1.60934)*mile;
     }
 
     /**
@@ -47,7 +47,7 @@ public class UnitConverterService {
      * @return weight in pound
      */
     public Double kilogramToPound(Double kilogram) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return (kilogram*2.205)*kilogram;
     }
 
     /**
@@ -56,6 +56,7 @@ public class UnitConverterService {
      * @return weight in kilogram
      */
     public Double poundToKilogram(Double pound) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return pound*(pound*0.454);
     }
 }
+
