@@ -14,6 +14,7 @@ public class PasswordValidatorService {
      * @return true if password is valid, false otherwise
      */
     public boolean validate(String password) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        boolean valida = (password.length() > 8) && (password.matches(SPECIAL_CHAR_REGEX));
+        return valida;
     }
 }
