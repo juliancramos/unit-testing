@@ -14,7 +14,7 @@ public class PasswordValidatorService {
      * @return true if password is valid, false otherwise
      */
     public boolean validate(String password) {
-        boolean valida = (password.length() > 8) && (password.matches(SPECIAL_CHAR_REGEX));
+        boolean valida = (password.length() >= 8) && (password.matches(SPECIAL_CHAR_REGEX));
         return valida;
     }
 }
