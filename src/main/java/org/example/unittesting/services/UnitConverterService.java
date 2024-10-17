@@ -11,7 +11,7 @@ public class UnitConverterService {
      * @return temperature in fahrenheit
      */
     public Double celsiusToFahrenheit(Double celsius) {
-        return (celsius * 1.8) + 32;
+        return (celsius * 1.8   ) + 32;
     }
 
     /**
@@ -20,7 +20,7 @@ public class UnitConverterService {
      * @return temperature in celsius
      */
     public Double fahrenheitToCelsius(Double fahrenheit) {
-        return (fahrenheit - 32)/ 1.8;
+        return (fahrenheit - 32)*(5/9);
     }
 
     /**
@@ -29,7 +29,7 @@ public class UnitConverterService {
      * @return distance in mile
      */
     public Double kilometerToMile(Double kilometer) {
-        return (kilometer * 0.621371)*kilometer;
+        return (kilometer/1.60);
     }
 
     /**
@@ -38,7 +38,7 @@ public class UnitConverterService {
      * @return distance in kilometer
      */
     public Double mileToKilometer(Double mile) {
-        return (mile * 1.60934)*mile;
+        return (mile * 1.609);
     }
 
     /**
@@ -47,7 +47,7 @@ public class UnitConverterService {
      * @return weight in pound
      */
     public Double kilogramToPound(Double kilogram) {
-        return (kilogram*2.205)*kilogram;
+        return (kilogram*2.205);
     }
 
     /**
@@ -56,7 +56,7 @@ public class UnitConverterService {
      * @return weight in kilogram
      */
     public Double poundToKilogram(Double pound) {
-        return pound*(pound*0.454);
+        return (pound*0.454);
     }
 }
 
