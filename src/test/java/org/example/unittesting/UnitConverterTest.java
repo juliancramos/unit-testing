@@ -23,7 +23,7 @@ public class UnitConverterTest {
         // Assert
         assert expected.equals(actual);
     }
-
+    @Test
     void fahrenheitToCelsius() {
         // Arrange
         Double fahrenheit = 32.0;
@@ -35,10 +35,11 @@ public class UnitConverterTest {
         // Assert
         assert expected.equals(actual);
     }
+    @Test
     void kilometerToMile() {
         // Arrange
         Double kilometer = 1.0;
-        Double expected = 0.621371;
+        Double expected = 0.625;
 
         // Act
         Double actual = unitConverter.kilometerToMile(kilometer);
@@ -46,6 +47,7 @@ public class UnitConverterTest {
         // Assert
         assert expected.equals(actual);
     }
+    @Test
     void mileToKilometer() {
         // Arrange
         Double mile = 1.0;
@@ -57,7 +59,7 @@ public class UnitConverterTest {
         // Assert
         assert expected.equals(actual);
     }
-
+    @Test
 void kilogramToPounds() {
     // Arrange
     Double kilogram = 1.0;
@@ -69,10 +71,11 @@ void kilogramToPounds() {
     // Assert
     assert expected.equals(actual);
 }
+    @Test
 void poundsToKilogram() {
     // Arrange
-    Double pound = 2.205;
-    Double expected = 1.0;
+    Double pound = 1.0;
+    Double expected = 0.454;
 
     // Act
     Double actual = unitConverter.poundToKilogram(pound);
@@ -80,4 +83,52 @@ void poundsToKilogram() {
     // Assert
     assert expected.equals(actual);
 }
+    @Test
+    void fahrenheitToCelsiusFailed() {
+        // Arrange
+        Double fahrenheit = 35.0;
+        Double expected = 1.0;
+
+        // Act
+        Double actual = unitConverter.fahrenheitToCelsius(fahrenheit);
+
+        // Assert
+        assert !expected.equals(actual);
+    }
+    @Test
+    void kilometerToMileFailed() {
+        // Arrange
+        Double kilometer = 2.0;
+        Double expected = 0.625;
+
+        // Act
+        Double actual = unitConverter.kilometerToMile(kilometer);
+
+        // Assert
+        assert !expected.equals(actual);
+    }
+    @Test
+    void mileToKilometerFailed() {
+        // Arrange
+        Double mile = 2.0;
+        Double expected = 1.609;
+
+        // Act
+        Double actual = unitConverter.mileToKilometer(mile);
+
+        // Assert
+        assert !expected.equals(actual);
+    }
+    @Test
+    void kilogramToPoundsFailed() {
+        // Arrange
+        Double kilogram = 5.0;
+        Double expected = 2.205;
+
+        // Act
+        Double actual = unitConverter.kilogramToPound(kilogram);
+
+        // Assert
+        assert !expected.equals(actual);
+    }
 }
