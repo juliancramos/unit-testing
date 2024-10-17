@@ -10,30 +10,32 @@ public class CalculatorService {
     }
 
     public Double subtract(Double a, Double b) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return a - b;
     }
 
     public Double multiply(Double a, Double b) {
-        throw new UnsupportedOperationException("Not implemented yet");
+
+        return a * b;
     }
 
     public Double divide(Double a, Double b) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return a / b;
     }
 
     public Double square(Double a) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return a * a;
     }
 
     public Double squareRoot(Double a) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return Math.sqrt(a);
     }
 
     public Double modulus(Double a, Double b) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return a % b;
     }
 
     public Double power(Double a, Double b) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return Math.pow(a, b);
     }
+
 }
