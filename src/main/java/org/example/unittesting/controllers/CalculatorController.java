@@ -36,4 +36,24 @@ public class CalculatorController {
     public Double divide(@RequestBody CalculatorDto request) {
         return calculator.divide(request.getA(), request.getB());
     }
+
+    @PostMapping("/modulus")
+    public Double modulus(@RequestBody CalculatorDto request) {
+        return calculator.modulus(request.getA(), request.getB());
+    }
+
+    @PostMapping("/power")
+    public Double power(@RequestBody CalculatorDto request) {
+        return calculator.power(request.getA(), request.getB());
+    }
+
+    @PostMapping("/square")
+    public Double square(@RequestBody CalculatorDto request) {
+        return calculator.square(request.getA());
+    }
+
+    @PostMapping("/square-root")
+    public Double squareRoot(@RequestBody CalculatorDto request) {
+        return calculator.squareRoot(request.getA());
+    }
 }

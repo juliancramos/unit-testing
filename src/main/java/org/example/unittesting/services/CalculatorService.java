@@ -28,4 +28,12 @@ public class CalculatorService {
     public Double squareRoot(Double a) {
         throw new UnsupportedOperationException("Not implemented yet");
     }
+
+    public Double modulus(Double a, Double b) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    public Double power(Double a, Double b) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
 }
